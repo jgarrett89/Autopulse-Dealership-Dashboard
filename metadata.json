@@ -1,0 +1,6 @@
+{
+  "name": "AutoPulse Dealership Operations & Forecast",
+  "description": "Full-stack car dealership operations dashboard with Google Sheets sync, real-time pipeline-weighted revenue forecasting, stale inventory risk markdown analysis, standing analytics, sensitivity modeling, and Gemini AI query engine.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

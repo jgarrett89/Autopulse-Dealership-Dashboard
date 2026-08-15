@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --font-display: 'Outfit', 'Plus Jakarta Sans', -apple-system, sans-serif;
+}
+
+:root {
+  --bg: #0A0A0B;
+  --card: #151518;
+  --border: #27272A;
+  --mint: #4ADE80;
+  --amber: #FBBF24;
+  --blue: #3B82F6;
+  --text: #D1D5DB;
+  --text-dim: #71717A;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+}
+
+/* Tabular figures and high-legibility numerals for data tables, metrics, prices, and KPIs */
+.font-mono, [class*="font-mono"] {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: 'tnum' on, 'zero' on;
+  letter-spacing: -0.01em;
+}
+
+.font-display {
+  font-family: 'Outfit', 'Plus Jakarta Sans', -apple-system, sans-serif;
+}
+
+/* Custom scrollbar for crisp dark UI */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0A0B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272A;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3F3F46;
+}
